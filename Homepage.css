@@ -1,0 +1,569 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+html,body{
+    overflow-x: clip;
+    
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    position: relative;
+}
+.shadow{
+    background-color: white;
+    opacity: 0.5;
+    height: 8%;
+    top: 2%;
+    width: 50%;
+    border: 3px solid white;
+    position: fixed;
+    left: 28%;
+    border-radius: 80px;
+    z-index: 1;
+
+}
+.navbar{
+    width:100%;
+    height: 170px;
+    
+    margin: auto;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    
+    
+}
+
+#navbar{
+    width: 100%;
+    background-color:transparent;
+    z-index: 1;    
+    position: fixed;
+    margin-top: 8px;
+    width: 80%;
+    height: 10%;
+    margin-left: 0px;
+    
+    
+}
+
+.logo{
+    display: flex;
+    width: 10%;
+    cursor: pointer;
+    padding-left: 1200px;
+    padding-top: 2%;
+    
+}
+
+nav{
+    flex: 1;
+    padding-left: 40%;
+    
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0px 10px;
+    position: sticky;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    
+    font-family: 'Raleway', sans-serif;
+    
+}
+
+nav ul li a{
+    text-decoration: underline;
+}
+
+
+.content h1{
+    padding-top: 10px;
+    color: white;
+    font-size: 150px;
+    text-align: center;
+    font-weight: 100;
+    font-family: 'Yeseva One', cursive;
+}
+
+.content p{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    font-weight: 100;
+    font-family: 'Raleway', sans-serif;
+   
+}
+
+.gradient-text{
+    background: rgb(255,255,254);
+background: linear-gradient(rgba(255,255,254,0.9251050762101716) 0%, rgba(237,237,236,1) 20%, rgba(0,0,0,0.32566530029980745) 115%);
+     background-size: 100%;
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.content .button{
+    display: block;
+    direction: inline;
+    text-align:right;
+    margin: auto;
+    font-family: 'Yeseva One', cursive;
+    font-size: 25px;
+    background: #F9C80E;
+    position:relative;
+    border-radius: 25px;
+    padding: 10px 19px;
+    width: 15%;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+}
+
+#explore{
+    position: absolute;
+    left: 7px;
+    bottom: 3px;
+    transition: background 2s, transform 2s;
+    transform: rotate(360deg);
+}
+
+
+
+
+::-webkit-scrollbar
+{width: 15px;
+height: 10%;
+max-height: 30%;}
+
+
+::-webkit-scrollbar-track{
+    box-shadow: insert 0 0 2px white;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: white;
+    border-radius: 10px;
+}
+
+/* Watch 1 */
+.watch1{
+position: absolute;
+left: -380px;
+top: -300px;
+z-index: 0; 
+
+}
+
+
+
+/* Watch 2 */
+.watch2{
+position: absolute;
+left: 1130px;
+top: 350px;
+}
+
+/* Watch 3 */
+.watch3{
+position: absolute;
+left: -350px;
+top: 1300px;
+}
+
+/* Watch 4 */
+.watch4{
+position: absolute;
+left: 1170px;
+top: 1800px;
+}
+
+
+
+/* arrow-down */
+.arrow{
+position: absolute;
+display: block;
+left: 670px;
+top: 550px;
+}
+
+
+  .head2 h2{
+    color: white;
+    text-align: center;
+    display: block;
+    padding-top: 10%;
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+    font-size: 70px;
+    font-weight: normal;
+    font-style: normal;
+    /*
+    line-height: 118px;*/
+}
+
+.categories{
+    background-color: transparent;
+    perspective: 1000px;
+    width:354px;
+    height: 267px;
+    border-radius: 85px;
+    
+}
+
+.classic{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s ease-in-out;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    left: 350px;
+    
+}
+
+.sport{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s ease-in-out;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    left: 750px;
+    top:-267px;
+    
+}
+
+.pocket{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s ease-in-out;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    left: 350px;
+    top:-210px;   
+}
+
+.luxury{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s ease-in-out;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    left: 750px;
+    top:-475px;
+    
+}
+
+.men{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s ease-in-out;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    left: 350px;
+    top:-400px;
+    
+}
+
+.women{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s ease-in-out;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    left: 750px;
+    top:-660px;
+    
+}
+
+.categories .classic:hover{
+    transform: rotateY(180deg);
+}
+
+.categories .sport:hover{
+    transform: rotateY(180deg);
+}
+
+.categories .pocket:hover{
+    transform: rotateY(180deg);
+}
+
+.categories .luxury:hover{
+    transform: rotateY(180deg);
+}
+
+.categories .men:hover{
+    transform: rotateY(180deg);
+}
+
+.categories .women:hover{
+    transform: rotateY(180deg);
+}
+
+.front,.back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility:hidden;
+    
+}
+
+
+
+.front {
+    
+    background-color: transparent;
+}
+
+.back {
+    
+    transform:  rotateY(180deg);
+}
+
+
+.customize h3{
+    font-size: 100px;
+    color: white;
+    font-weight: normal;
+    text-align: center;
+    padding-top: 59%;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+
+.customize .btn{
+    display: block;
+    direction: inline;
+    text-align:center;
+    margin: auto;
+    font-family: 'Yeseva One', cursive;
+    font-size: 48px;
+    background: #F9C80E;
+    position:relative;
+    border-radius: 40px;
+    padding: 15px 10px;
+    width: 30%;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+    
+}
+
+.about h4{
+    color: white;
+    text-align:left;
+    display: block;
+    padding-top: 5%;
+    padding-left: 105px;
+    padding-right: 230px;
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+    font-size: 70px;
+    font-weight: normal;
+    font-style: normal;
+    /*
+    line-height: 118px;*/
+}
+
+.about p{
+    color: white;
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 105px;
+    padding-right: 230px;
+    position: relative;
+    font-size: 28px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    opacity: 2px;
+    font-style: normal;
+    display: block;
+    
+}
+
+/*#insta{
+    padding: 20px 20px;
+}
+
+.social .insta:hover{
+    background: #F9C80E;
+    opacity: 1;
+    
+}*/
+
+ .socials ul{
+    
+     position: absolute;
+     justify-content: center;
+     align-items: center;
+     margin: 0;
+     transform: translate(10%,70%);
+     display: flex;
+}
+
+
+.socials ul li{
+    list-style: none;
+    margin: 0px 15px;
+}
+
+.socials ul li .fa{
+    font-size: 40px;
+    line-height: 60px;
+    transition: .6s;
+    color: black;
+}
+
+.socials ul li .fa:hover{
+    color: white;
+}
+
+.socials ul li a{
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color:white;
+    text-align: center;
+    transition: .6s;
+   /* box-shadow: 0px 5px 4px 0px rgb(80,80,80);*/
+}
+
+.socials ul li a:hover{
+    transform: translate(0,-15px);
+}
+
+.socials ul li:nth-child(1) a:hover{
+    background:radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+
+.socials ul li:nth-child(2) a:hover{
+    background-color: #55acee;
+}
+
+.socials ul li:nth-child(3) a:hover{
+    background-color: #3b5999;
+}
+
+.socials ul li:nth-child(4) a:hover{
+    background-color: #0077B5;
+}
+
+/*contact*/
+.contact ul{
+    
+     position: absolute;
+     justify-content: center;
+     align-items: center;
+     margin: -10px;
+     transform: translate(850px,40px);
+     display: flex;
+     flex-direction: column;
+}
+
+
+.contact ul li{
+    list-style: none;
+    margin: -8px 8px;
+}
+
+.contact ul li .fa{
+    font-size: 30px;
+    line-height: 50px;
+    transition: .6s;
+    color: black;
+}
+
+.contact ul li .fa:hover{
+    color: white;
+}
+
+.contact ul li a{
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color:white;
+    text-align: center;
+    transition: .6s;
+   /* box-shadow: 0px 5px 4px 0px rgb(80,80,80);*/
+}
+
+/*.contact ul li a:hover{
+    transform: translate(0,-10px);
+}*/
+
+
+
+
+#mail-icon~span{
+    display: inline-block;
+    position: relative;
+    float: left;
+    color: white;
+    left: 70px;
+    bottom: 45px;
+    font-size: 25px;
+    font-family: 'Raleway', sans-serif;
+}
+
+#phone-icon~span{
+    display: inline-block;
+    position: relative;
+    float: left;
+    color: white;
+    left: 65px;
+    bottom: 45px;
+    padding-right: 20px;
+    width:180px;
+    font-size: 25px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.contact ul li:nth-child(1) a:hover{
+    background-color:red;
+    
+    
+}
+
+.contact ul li:nth-child(2) a:hover{
+    background-color: green;
+}
+
+.arrow-up{
+position: absolute;
+display: block;
+left: 48%;
+top: 2750px;
+}

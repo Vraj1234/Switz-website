@@ -1,0 +1,316 @@
+body{
+    background-color: black;
+}
+
+*{
+    outline: none;
+    overflow-x: hidden;
+}
+
+.heading{
+    display: inline;
+    font-family: 'Yeseva One', cursive;
+    font-size: 400%;
+    color: #F9C80E;
+    position: relative;
+    margin-left: 22%;
+    top: 0px;
+    animation-name: heading;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+
+@keyframes heading {
+    0%{top: -100px;}
+    100%{top: 0px;}
+}
+
+.back{
+    display: inline-block;
+    position: absolute;
+    left: 4%;
+    top: 4%;
+    animation-name: back;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes back {
+    0%{left: -100px;top: 3%;}
+    100%{left: 4%;top: 3%;}    
+}
+
+#Submit{
+    position: absolute;
+    font-family: 'Yeseva One', cursive;
+    font-size: 30px;
+    top: 356%;
+    left: 45%;
+    height: 50px;
+    width: 250px;
+    background-color: #F9C80E;
+    color: black;
+    border: 0px;
+    border-radius: 30px;
+}
+
+::-webkit-scrollbar
+{width: 15px;
+height: 10%;
+max-height: 30%;}
+
+::-webkit-scrollbar-track{
+    box-shadow: insert 0 0 2px white;
+    border-radius: 10px;
+    
+}
+
+
+::-webkit-scrollbar-thumb{
+    background:white;
+    border-radius: 10px;
+}
+.box{
+    z-index: -1;
+    position: relative;
+    top: 0%;
+    left: 0px;
+    padding-bottom: 1%;
+    width: 100%;
+}
+
+.logo{
+    display: inline-block;
+    position: absolute;
+    left: 90%;
+    top: 3%;
+    animation-name: logo;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes logo {
+    0%{left: 110%;top: 3%;}
+    100%{left: 88%;top:3%;}
+}
+.spam{
+    margin-top: 20%;
+    color: white;
+}
+
+.up3{
+    background-color: white;
+    opacity: 0.1;
+    position: absolute;
+    height: 94%;
+    width: 66%;
+    top: 255%;
+    left: 0%;
+    float: left;
+    border-radius: 0px 50px 50px 0px;    
+}
+
+
+.up2{
+    background-color: white;
+    opacity: 0.2;
+    position: absolute;
+    height: 15%;
+    width: 70%;
+    top: 3%;
+    left: 14%;
+    border-radius: 20px;
+    animation-name: heading_shadow;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes heading_shadow {
+    0%{ top: -100px;}
+    100%{top: 3%;}
+    
+}
+
+.up{
+    background-color: white;
+    opacity: 0.1;
+    position: absolute;
+    height: 78%;
+    width: 66%;
+    top: 22%;
+    left: 35%;
+    float: right;
+    border-radius: 50px 0px 0px 50px;
+    animation-name: personal_shadow;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes personal_shadow {
+    0%{left: 120%;}
+    100%{left: 35%;}
+}
+.Personal_details{
+    z-index: 1;
+    position: absolute;
+    color: white;
+    height: 100%;
+    width: 70%;
+    top: 22%;
+    left: 35%;
+    float: right;
+    border-radius: 50px,0px,50px,0px;
+    animation-name: Personal_details;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes Personal_details {
+    0%{left: 120%;}
+    100%{left: 35%;}
+}
+
+#bg{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.Other_details{
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    position: absolute;
+    height: 100%;
+    top: 255%;
+    width: 80%;
+}
+
+#bg2{
+    position: absolute;
+    width: 100%;
+    top: 123%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    left: 0;
+}
+
+#bg3{
+    position: absolute;
+    width: 100%;
+    top: 246%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    left: 0;
+}
+
+#image_map{
+    position: absolute;
+    left: 5%;
+    top: 133%;
+    height: auto;
+    width: auto;
+}
+
+.Name,.Email,.Phone,.Address{
+    z-index: 1;
+    position: relative;
+    width: 10%;
+    left: 10%;
+    font-size: 200%;
+    font-family: 'Raleway', sans-serif;
+}
+#Name,#Email,#Phone,#Address{
+    z-index: 1;
+    position: static;
+    left: 20%;
+    margin: 3%;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid white;
+    border-radius: 10px;
+    height: 10%;
+    width: 45%;
+}
+
+.Wrist_size,.Custom_text,.Hand_color,.Strap_color,.Custom_image{
+    z-index: 1;
+    position: relative;
+    width: 1%;
+    left: 5%;
+    font-size: 200%;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 60%;
+}
+
+#Wrist_size,#Custom_text,#Hand_color,#Strap_color,#Custom_image{
+    z-index: 1;
+    position: static;
+    margin: 2.5%;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid white;
+    border-radius: 10px;
+    height: 8%;
+    width: 20%;
+}
+
+#Wrist_size{
+    margin-left: 15%;
+}
+#Custom_text{
+    margin-left: 12%;
+}
+#Custom_image{
+    margin-left: 9%;
+    font-family: 'Raleway', sans-serif;
+    size: 70px;
+    border:0px; 
+}
+#Strap_color{
+    margin-left: 10.5%;
+}
+#Hand_color{
+    margin-left: 11%;
+}
+
+::placeholder{
+    font-family: 'Raleway', sans-serif;
+    padding-left: 2%;
+    font-size: 100%;
+}
+#Name{
+    margin-left: 32%;
+    
+}
+#Email{
+    margin-left: 33%;
+}
+#Address{
+    margin-left: 29%;
+}
+#Phone{
+    margin-left: 19%;
+}
+
+input[type=text]
+{
+    margin-left: 2px;
+    padding-left: 2px;
+    font-size: 30px;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+input[type=email]
+{
+    font-size: 30px;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+input[type=number]
+{
+    font-size: 30px;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
